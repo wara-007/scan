@@ -1,0 +1,39 @@
+page-home,
+.home {
+  ion-list {
+    border-radius: 1rem;
+    overflow: hidden;
+
+    ion-item,
+    .item:first-child,
+    .item:last-child {
+      border: none;
+    }
+
+    ion-datetime {
+      padding-left: 0;
+    }
+  }
+}
+
+.box-i-scan{
+  padding:40px 0;
+      width: 200px;
+    margin: auto;
+    &:after{
+      content: "";
+      display: block;
+      width: 150px;
+      height: 150px;
+      margin: auto;
+      background: url("./../assets/img/barcode-scanner.png") no-repeat;
+      background-size: 100%;
+      
+    }
+  ion-icon{
+        font-size: 80px;
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+}
