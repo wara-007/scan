@@ -1,0 +1,4 @@
+#Fri Jun 29 11:08:48 ICT 2018
+base.0=/Applications/MAMP/logs/work/appScanner___/platforms/android/app/build/intermediates/transforms/dexMerger/debug/80
+renamed.0=classes.dex
+file.0=/Applications/MAMP/logs/work/appScanner___/platforms/android/app/build/intermediates/transforms/dexMerger/debug/80/classes.dex

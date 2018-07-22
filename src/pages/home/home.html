@@ -1,0 +1,99 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Home
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="xls()">
+                <ion-icon name="share-alt"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+    <!--  <ion-scroll scrollX="true" scrollY="true" class="data-scroll">
+    <table border="1" class="data-table">
+      <tr>
+        <td *ngFor="let header of headerRow" text-center><b>{{ header }}</b></td>
+      </tr>
+      <tr *ngFor="let row of csvData; let i = index">
+        <td *ngFor="let data of row; let j = index; trackBy: trackByFn">
+          <ion-input type="text" [(ngModel)]="csvData[i][j]"></ion-input>
+        </td>
+      </tr>
+    </table>
+  </ion-scroll> -->
+    <!--  <div>
+    <ion-input type="text" [(ngModel)]="encodText"></ion-input>
+    <button ion-button bloch (click)="encode()"> Encode </button>
+  </div> -->
+    <!--  <div *ngIf="scannedData.text">
+    <label>Your barcode is</label>
+    <br>
+    <span>{{ scannedData.text }}</span>
+  </div>
+
+ -->
+    <!-- with name set -->
+    <!-- <ion-item *ngIf="scannedData.text">
+  <ion-label>Todo1</ion-label>
+  <ion-input type="text" [(ngModel)]="todo.title" name="title" value="{{ scannedData.text }}"></ion-input>
+</ion-item> -->
+    <!-- or with standalone set to true -->
+    <!-- <ion-item>
+  <ion-label>Todo2</ion-label>
+  <ion-input type="text" [(ngModel)]="todo.title" [ngModelOptions]="{standalone: true}"></ion-input>
+</ion-item> -->
+
+
+    
+    <!-- <div *ngIf="scannedData.text"> -->
+    <div class="f_m">
+
+       <div class="f1">
+          <h3>รหัสทรัพย์สิน</h3>
+          <ion-item>
+            <ion-label>รหัส Qr code:</ion-label>
+            <ion-input [(ngModel)]="task.code" placeholder="" type="text" value="{{ scannedData.text }}"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Note:</ion-label>
+            <ion-input [(ngModel)]="task.note" placeholder="" type="text" ng-value="-"></ion-input>
+        </ion-item>
+        <button ion-button full (click)="onClick()" margin-top>ADD</button>
+       </div>
+        
+  </div>
+    <ion-content >    <div class="f2">
+          <ion-list padding>
+            <ion-item-sliding *ngFor="let task of tasks; let i = index;">
+                <ion-item>
+                    
+                    <p><span>{{ i+1 }}.</span> {{task.code}}</p>
+                    <span>{{task.note}}</span>
+                    <span (click)="onStrike(task)" [ngClass]="{'strike': task.strike}"> {{ task.name }} </span>
+                </ion-item>
+                <ion-item-options side="right">
+                    <button ion-button color="light" (click)="onEdit(task)">
+                        <ion-icon name="create"></ion-icon> Edit
+                    </button>
+                    <button ion-button color="danger" (click)="onDelete(task)">
+                        <ion-icon name="trash"></ion-icon> Delete
+                    </button>
+                </ion-item-options>
+            </ion-item-sliding>
+        </ion-list>
+        </div>
+  
+
+ 
+
+
+</ion-content>
+<ion-footer>
+    <ion-toolbar>
+        <div>
+            <button ion-button full (click)="scan()"> Scan </button>
+        </div>
+    </ion-toolbar>
+</ion-footer>

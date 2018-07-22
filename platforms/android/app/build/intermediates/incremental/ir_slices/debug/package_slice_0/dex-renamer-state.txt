@@ -1,0 +1,4 @@
+#Fri Jun 29 13:11:25 ICT 2018
+base.0=/Applications/MAMP/logs/work/appScanner___/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1
+path.0=classes.dex
+renamed.0=classes.dex
