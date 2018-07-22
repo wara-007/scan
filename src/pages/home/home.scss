@@ -27,6 +27,7 @@ page-home {
 
   
 }
+
 .f2{
   margin-top: 40px;
     .item-md p {
@@ -50,7 +51,15 @@ page-home {
       top: initial;
     height: calc( 100vh - 350px);
   }
-
+.btn-scan{
+      width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 10px auto;
+    ion-icon{
+      margin-right: 10px;
+    }
+}
 }
 
 /* Not Using any CSS Framework */
